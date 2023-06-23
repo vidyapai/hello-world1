@@ -1,0 +1,25 @@
+
+docker ps -a--both runing and exited containers
+docker ps -->status of all runing containers
+docker compose ps to check status of all containers
+docker compose stop to stop all running containers
+docker compose start to start all stopped containers
+docker compose down to stop and remove all the running containers
+docker compose up --detach to create and start all containers
+docker compose up --detach <service_name> to create and start the provided service
+docker compose exec service_name sh to open shell inside running container
+docker container prune -a to clean up any dangling containers(Will remove all the stopped containers)
+docker system prune -fa to prune the entire docker system
+docker images --locally stored docker images
+docker rm container id --to delete the stopped containers
+docker rmi--image id---delete an image from local storage
+docker build <docker path file> --to build an image from a specified docker file.
+docker --version:- gives the version of docker
+docker pull <image name>:- pulls images from repository (hub.docker.com)
+docker run -it -d image name :- create a container from an image
+docker exec -it container-name bash
+docker kill- docker kill container name
+docker commit containerid username/imagename:- Creates a new image of an edited container on the local system.
+docker run --rm -it prakhar1989/static-site:-
+removes the container when it exits and the -it flag specifies an interactive terminal which makes it easier to kill the container with Ctrl+C
+docker search ubuntu - searches for an image
